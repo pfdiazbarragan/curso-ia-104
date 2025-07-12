@@ -4,4 +4,9 @@ git add .
 git commit -m "comentario ......."
 
 
+git branch -M main
+git remote add origin https://github.com/pfdiazbarragan/curso-ia-104.git
+git pull origin main --rebase        # este en caso haya archivos ay subidos en el repositorio y no esten en mi repo local, trae lso cambios y lso fusiona
+git push -u origin main
+
 
