@@ -15,3 +15,9 @@ git push -u origin main
 it add .
 git commit -m "comentario ......."
 it push -u origin main
+
+
+-------------------------otros comandos
+git status   #revisar estado ..
+git log      #muestra las versiones 
+
