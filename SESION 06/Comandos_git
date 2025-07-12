@@ -21,3 +21,7 @@ it push -u origin main
 git status   #revisar estado ..
 git log      #muestra las versiones 
 
+----------------------para volver a uan version determinada
+git log
+git checkout 5ae10e65fb7020ee65c6898cc112912bd74793d4   ## ultimo parametro es el hash de la version a la que quiero volver 
+
