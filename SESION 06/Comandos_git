@@ -10,3 +10,8 @@ git pull origin main --rebase        # este en caso haya archivos ay subidos en 
 git push -u origin main
 
 
+---------------------------cuando el repositorio ya esta creado
+
+it add .
+git commit -m "comentario ......."
+it push -u origin main
