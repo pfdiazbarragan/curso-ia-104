@@ -30,3 +30,5 @@ git checkout main                                       ## para volver a la ulti
 --------------------para descargar repositorio
 git clone https://github.com/pfdiazbarragan/curso-ia-104.git
 
+git checkout main  #cambiar a una rama existente
+
