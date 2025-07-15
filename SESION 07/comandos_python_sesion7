@@ -1,0 +1,7 @@
+pip --version
+sudo dnf install pip
+pip install pandas 
+
+
+
+
