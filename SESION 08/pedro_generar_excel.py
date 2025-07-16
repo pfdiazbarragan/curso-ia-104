@@ -67,7 +67,8 @@ def generar_excel_pormes(mes):
 
     # Guardar en un archivo Excel
     #nombre_archivo = "curso-ia-104/SESION 08/reporte_ventas_medicamentos-resultante_"+str(mes)+".xlsx"
-    nombre_archivo = "SESION 08/pedro_generados/reporte_ventas_medicamentos-resultante_"+str(mes)+".xlsx"
+    nombre_archivo = os.path.join("SESION 08","pedro_generados","reporte_ventas_medicamentos-resultante_"+str(mes)+".xlsx")
+    print("nombre_archivo : "+nombre_archivo)
     df.to_excel(nombre_archivo, index=False)
 
     print(f"Reporte generado: {nombre_archivo}")
