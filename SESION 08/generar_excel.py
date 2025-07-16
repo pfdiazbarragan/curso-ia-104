@@ -29,7 +29,6 @@ metodos_pago = ["Efectivo", "Tarjeta", "Seguro"]
 clientes = ["Cliente Frecuente", "Nuevo Cliente", "Cliente VIP", "Sin Registro"]
 
 
-
 # Generar datos
 
 def generar_excel_pormes(mes): 
@@ -66,6 +65,7 @@ def generar_excel_pormes(mes):
     ])
 
     # Guardar en un archivo Excel
+    #nombre_archivo = "curso-ia-104/SESION 08/reporte_ventas_medicamentos-resultante_"+str(mes)+".xlsx"
     nombre_archivo = "reporte_ventas_medicamentos-resultante_"+str(mes)+".xlsx"
     df.to_excel(nombre_archivo, index=False)
 

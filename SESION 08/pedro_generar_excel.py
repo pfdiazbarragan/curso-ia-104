@@ -1,6 +1,7 @@
 import pandas as pd
 import random
 import datetime
+import os
 
 
 # Función para generar fechas aleatorias en febrero de 2024
@@ -12,11 +13,6 @@ def fecha_aleatoria(numero_mes):
         fin = datetime.date(2024, numero_mes, 30)
     delta = (fin - inicio).days
     return inicio + datetime.timedelta(days=random.randint(0, delta))
-
-
-
-
-
 
 # Listas de datos de ejemplo
 departamentos = ["Lima", "Arequipa", "Cusco", "Trujillo", "Piura", "Iquitos", "Chiclayo", "Tacna", "Puno", "Ayacucho"]
@@ -32,7 +28,6 @@ requiere_receta = ["Sí", "No"]
 vendedores = ["Juan Pérez", "María García", "Carlos Fernández", "Ana López"]
 metodos_pago = ["Efectivo", "Tarjeta", "Seguro"]
 clientes = ["Cliente Frecuente", "Nuevo Cliente", "Cliente VIP", "Sin Registro"]
-
 
 
 # Generar datos
@@ -71,7 +66,8 @@ def generar_excel_pormes(mes):
     ])
 
     # Guardar en un archivo Excel
-    nombre_archivo = "SESION 07/reporte_ventas_medicamentos-resultante_"+str(mes)+".xlsx"
+    #nombre_archivo = "curso-ia-104/SESION 08/reporte_ventas_medicamentos-resultante_"+str(mes)+".xlsx"
+    nombre_archivo = "SESION 08/pedro_generados/reporte_ventas_medicamentos-resultante_"+str(mes)+".xlsx"
     df.to_excel(nombre_archivo, index=False)
 
     print(f"Reporte generado: {nombre_archivo}")
@@ -82,6 +78,10 @@ def generar_excel_pormes(mes):
 
 contador = 1
 limite = 5
+
+if not os.path.exists("SESION 08/pedro_generados"):
+    os.makedirs("SESION 08/pedro_generados")
+
 while(contador <= limite ):
     
     generar_excel_pormes(contador)
